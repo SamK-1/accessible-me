@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <!-- skip link thats hidden. shows up when hovered -->
+  <!-- skip link thats hidden. shows up when you tab to it -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <div class="container">
@@ -37,7 +37,7 @@
       </nav>
 
       <!-- bg -->
-      <img src="https://placekitten.com/1200/900" class="banner" alt="Inside Jam Box Studios recording space">
+      <img src="https://picsum.photos/1200/900" class="banner" alt="Inside Jam Box Studios recording space">
     </header>
 
     <!-- where all the main page content lives -->
@@ -51,6 +51,30 @@
         omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto
         error voluptatibus.</p>
 
+      <!-- contact form section -->
+      <section class="contact-section" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Us</h2>
+
+        <!-- the contact form with the name, email, subject + msg -->
+        <form action="thanks.html" method="get" aria-describedby="form-help">
+          <p id="form-help">All fields are required unless stated otherwise.</p>
+
+          <label for="full-name">Full Name</label>
+          <input id="full-name" name="full-name" type="text" autocomplete="name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" required>
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
       <!-- small section about the owner -->
       <section class="owner" aria-labelledby="owner-heading">
         <h2 id="owner-heading">Meet the owner</h2>
@@ -61,12 +85,10 @@
             <li><strong>Name:</strong> <span itemprop="name">John Doe</span></li>
             <li><strong>Title:</strong> <span itemprop="jobTitle">CEO</span></li>
             <li>
-              <!-- strong tag to showcase importance -->
               <strong>Email:</strong>
               <a href="mailto:johnjoe@jambox.ca" itemprop="email">johnjoe@jambox.ca</a>
             </li>
             <li>
-              <!-- x2 -->
               <strong>Phone:</strong>
               <a href="tel:+16130000000" itemprop="telephone">613-000-0000</a>
             </li>
@@ -84,7 +106,12 @@
         </address>
       </section>
 
+    </main>
 
+    <!-- footer with copyright -->
+    <footer class="site-footer" role="contentinfo">
+      <p>&copy; 2026 Jam Box Studios</p>
+    </footer>
 
   </div>
 </body>
